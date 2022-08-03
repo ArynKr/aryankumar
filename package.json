@@ -1,0 +1,40 @@
+{
+  "name": "arynkr",
+  "version": "1.0.0",
+  "description": "A personal card for Aryan Kuamr (@arynkr)",
+  "main": "/bin/card.js",
+  "bin": {
+    "arynkr": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arynkr/arynkr.git"
+  },
+  "homepage": "https://aryankumar.in",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Aryan Kumar <aryankumar1504@gmail.com> (http://aryankumar.in)",
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {}
+}
